@@ -19,6 +19,14 @@ This is a simple Django project that demonstrates CRUD (Create, Read, Update, De
   
 - **Crispy Forms**: Currently, the project uses Django's built-in form rendering. For better form styling and control, consider integrating Django Crispy Forms.
 
+
+## Step-By-Step Instructions
+
+For detailed step-by-step instructions on how to set up and use this project, please refer to the following URL:
+
+[Step-By-Step Instructions](https://inzunza.notion.site/Django-Class-Based-Views-3fd6cdb2a3424d6d8906c507d47a51d4)
+
+
 ## Running the Project Locally
 
 ### Prerequisites
