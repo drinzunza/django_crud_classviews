@@ -1,0 +1,17 @@
+{% extends 'template.html' %}
+
+{% block title %}Movie List{% endblock %}
+
+{% block content %}
+    <h1>Movie List</h1>    
+    <a href="{% url 'movie_new' %}" class="btn btn-primary">Add New Movie</a>    
+    <ul class="list-unstyled mt-3">
+        {% for movie in object_list %}
+            <li>
+                <a href="{% url 'movie_detail' movie.id %}">{{ movie.title }}</a> ({{ movie.genre }})
+                <br>
+                <img src="{{ movie.poster.url }}" alt="{{ movie.title }}" width="200">
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

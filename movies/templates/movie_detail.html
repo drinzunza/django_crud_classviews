@@ -1,0 +1,16 @@
+{% extends 'template.html' %}
+
+{% block title %}{{ object.title }}{% endblock %}
+
+{% block content %}
+    <h1>{{ object.title }}</h1>
+    <p>Genre: {{ object.genre }}</p>
+    <p>Release Date: {{ object.release_date }}</p>
+    <p>Rating: {{ object.rating }}</p>
+    <img src="{{ object.poster.url }}" alt="{{ object.title }}" width="300">
+    <br>
+    
+    
+    <a href="{% url 'movie_edit' object.id %}" class="btn btn-secondary">Edit</a>
+    <a href="{% url 'movie_delete' object.id %}" class="btn btn-danger">Delete</a>
+{% endblock %}
