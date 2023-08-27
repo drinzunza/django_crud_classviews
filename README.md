@@ -52,7 +52,7 @@ This is a simple Django project that demonstrates CRUD (Create, Read, Update, De
 
     ```bash
     pip install -r requirements.txt
-    ``
+    ```
 
 5. **Apply Migrations**
 
